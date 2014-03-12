@@ -3,13 +3,14 @@
 
 #include <QtGui/QMainWindow>
 #include <QtOpenGL/QtOpenGL>
+#include <QGLWidget>
 
-class MainWindow : public QMainWindow
+class MainWindow : public QGLWidget
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = 0);
+    MainWindow(QGLWidget *parent = 0);
     ~MainWindow();
 };
 
